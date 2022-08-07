@@ -1,0 +1,5 @@
+eid,uid,event_name,value,event_timestamp
+abc,aaa,Rate Given,5,1659907922476
+def,bbb,Rate Given,4,1659907922476
+ghi,ccc,Purchase Done,20.20,1659907922476
+jkl,ccc,File Uploaded,"file_name.mkv",1659907922476

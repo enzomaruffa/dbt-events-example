@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: fct_file_uploaded
+    description: >
+      "Table with all the File Uploaded events. The event-specific columns are already properly mapped."
+    columns:
+      - name: surrogate_key
+        description: The primary key for this table.
+        tests:
+          - not_null
+          - unique
+      - name: eid
+        description: The ID of the event
+        tests:
+          - not_null
+          - unique
+      - name: uid
+        description: The ID of the user resposible for the event
+        tests:
+          - not_null
+      - name: event_name
+        description: The name of the event that was fired
+        tests:
+          - not_null
+      - name: file_name
+        description: The name of the file uploaded
+      - name: file_extension
+        description: The extension of the file uploaded
+      - name: event_timestamp
+        description: The timestamp of the event
+        tests:
+          - not_null

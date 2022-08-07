@@ -1,0 +1,26 @@
+version: 2
+
+seeds:
+  - name: events_data
+    description: >
+      "Seed for the events_data table. Sample table with different types of event feeding a value to the same column"
+    columns:
+      - name: eid
+        description: The primary key for this table. ID of the event
+        tests:
+          - not_null
+          - unique
+      - name: uid
+        description: The ID of the user resposible for the event
+        tests:
+          - not_null
+      - name: event_name
+        description: The name of the event that was fired
+        tests:
+          - not_null
+      - name: value
+        description: The value of the event. Meaning depends on the context (i.e. the event fired)
+      - name: event_timestamp
+        description: The timestamp of the event
+        tests:
+          - not_null
